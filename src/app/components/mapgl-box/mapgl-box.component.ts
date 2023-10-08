@@ -29,7 +29,7 @@ export class MapglBoxComponent implements OnInit {
   }
   createMarkers() {
     cities.forEach(city => {
-      new mapboxgl.Marker().setLngLat([])
+
     })
   }
 }

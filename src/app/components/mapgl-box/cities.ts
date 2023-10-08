@@ -1,65 +1,83 @@
 export const cities = [
   {
-    "city": "Berlin",
+    "cityName": "Berlin",
     "apartmentName": "Cozy Studio in Mitte",
     "street": "Friedrichstraße 123",
     "listingType": "Rental",
+    "lon": "",
+    "lat": "",
     "price": 1200
   },
   {
-    "city": "Munich",
+    "cityName": "Munich",
     "apartmentName": "Spacious Condo near Marienplatz",
     "street": "Viktualienmarkt 45",
     "listingType": "Sale",
+    "lon": "",
+    "lat": "",
     "price": 350000
   },
   {
-    "city": "Hamburg",
+    "cityName": "Hamburg",
     "apartmentName": "Modern Loft in HafenCity",
     "street": "Großer Grasbrook 67",
     "listingType": "Rental",
+    "lon": "",
+    "lat": "",
     "price": 1800
   },
   {
-    "city": "Cologne",
+    "cityName": "Cologne",
     "apartmentName": "Elegant Apartment in Altstadt",
     "street": "Hohe Straße 12",
     "listingType": "Sale",
+    "lon": "",
+    "lat": "",
     "price": 295000
   },
   {
-    "city": "Frankfurt",
+    "cityName": "Frankfurt",
     "apartmentName": "Luxury Penthouse in Westend",
     "street": "Bockenheimer Landstraße 75",
     "listingType": "Sale",
+    "lon": "",
+    "lat": "",
     "price": 980000
   },
   {
-    "city": "Dusseldorf",
+    "cityName": "Dusseldorf",
     "apartmentName": "Charming Riverside Apartment",
     "street": "Rheinuferpromenade 34",
     "listingType": "Rental",
+    "lon": "",
+    "lat": "",
     "price": 1500
   },
   {
-    "city": "Stuttgart",
+    "cityName": "Stuttgart",
     "apartmentName": "Modern Loft in Bad Cannstatt",
     "street": "Wilhelmstraße 89",
     "listingType": "Sale",
+    "lon": "",
+    "lat": "",
     "price": 420000
   },
   {
-    "city": "Leipzig",
+    "cityName": "Leipzig",
     "apartmentName": "Historic Townhouse in Zentrum",
     "street": "Nikolaistraße 21",
     "listingType": "Sale",
+    "lon": "",
+    "lat": "",
     "price": 275000
   },
   {
-    "city": "Hannover",
+    "cityName": "Hannover",
     "apartmentName": "Cozy Apartment near Maschsee",
     "street": "Maschstraße 10",
     "listingType": "Rental",
+    "lon": "",
+    "lat": "",
     "price": 1100
   }
 ]
