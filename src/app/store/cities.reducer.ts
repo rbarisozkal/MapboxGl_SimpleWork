@@ -1,7 +1,6 @@
 import { listCities, removeCity, addCity } from "./cities.actions";
 import { createReducer, on } from "@ngrx/store";
 import { cities } from "../components/mapgl-box/cities";
-export const initialCities = cities;
 export const initialState = {
     cities: cities
 };
@@ -22,5 +21,13 @@ export const cityReducer = createReducer(
             cities: updatedCities
         };
     }),
-    on(listCities, (state) => state)
+
+    on(listCities, (state, { cities }) => {
+        return {
+            ...state,
+            cities: cities,
+        };
+    })
 );
+export { listCities };
+

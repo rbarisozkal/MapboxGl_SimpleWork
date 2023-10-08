@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 import { cities } from './cities';
+import { Observable } from 'rxjs';
+import { addCity, removeCity, listCities } from 'src/app/store/cities.actions';
+import { Store } from '@ngrx/store';
+import { initialState } from 'src/app/store/cities.reducer';
+import { CitiesState, City } from 'src/app/store/cities.interface';
+import { CitiesService } from 'src/app/store/cities.service';
+
 @Component({
   selector: 'app-mapgl-box',
   templateUrl: './mapgl-box.component.html',
@@ -8,9 +15,12 @@ import { cities } from './cities';
 })
 export class MapglBoxComponent implements OnInit {
   map!: mapboxgl.Map
-  cities: any = cities;
+  cities$!: Observable<City[]>
+  constructor(private store: Store<CitiesState>, private citiesService: CitiesService) { }
   ngOnInit(): void {
-    this.createMap()
+    this.createMap();
+    this.cities$ = this.citiesService.cities$;
+    console.log(this.cities$);
   }
   createMap() {
     const map = new mapboxgl.Map({

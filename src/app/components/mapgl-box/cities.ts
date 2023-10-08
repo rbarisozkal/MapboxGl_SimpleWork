@@ -4,8 +4,8 @@ export const cities = [
     "apartmentName": "Cozy Studio in Mitte",
     "street": "Friedrichstraße 123",
     "listingType": "Rental",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 1200
   },
   {
@@ -13,8 +13,8 @@ export const cities = [
     "apartmentName": "Spacious Condo near Marienplatz",
     "street": "Viktualienmarkt 45",
     "listingType": "Sale",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 350000
   },
   {
@@ -22,8 +22,8 @@ export const cities = [
     "apartmentName": "Modern Loft in HafenCity",
     "street": "Großer Grasbrook 67",
     "listingType": "Rental",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 1800
   },
   {
@@ -31,8 +31,8 @@ export const cities = [
     "apartmentName": "Elegant Apartment in Altstadt",
     "street": "Hohe Straße 12",
     "listingType": "Sale",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 295000
   },
   {
@@ -40,8 +40,8 @@ export const cities = [
     "apartmentName": "Luxury Penthouse in Westend",
     "street": "Bockenheimer Landstraße 75",
     "listingType": "Sale",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 980000
   },
   {
@@ -49,8 +49,8 @@ export const cities = [
     "apartmentName": "Charming Riverside Apartment",
     "street": "Rheinuferpromenade 34",
     "listingType": "Rental",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 1500
   },
   {
@@ -58,8 +58,8 @@ export const cities = [
     "apartmentName": "Modern Loft in Bad Cannstatt",
     "street": "Wilhelmstraße 89",
     "listingType": "Sale",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 420000
   },
   {
@@ -67,8 +67,8 @@ export const cities = [
     "apartmentName": "Historic Townhouse in Zentrum",
     "street": "Nikolaistraße 21",
     "listingType": "Sale",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 275000
   },
   {
@@ -76,8 +76,8 @@ export const cities = [
     "apartmentName": "Cozy Apartment near Maschsee",
     "street": "Maschstraße 10",
     "listingType": "Rental",
-    "lon": "",
-    "lat": "",
+    "lon": 3333,
+    "lat": 3333,
     "price": 1100
   }
 ]

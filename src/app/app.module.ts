@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { MapComponent } from './map/map.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MapglBoxComponent } from './components/mapgl-box/mapgl-box.component';
-
+import { StoreModule } from '@ngrx/store';
+import { cityReducer } from './store/cities.reducer';
+import { CitiesService } from './store/cities.service';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,9 +20,11 @@ import { MapglBoxComponent } from './components/mapgl-box/mapgl-box.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgxMapboxGLModule
+    NgxMapboxGLModule,
+    StoreModule.forRoot({ cities: cityReducer }),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CitiesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
