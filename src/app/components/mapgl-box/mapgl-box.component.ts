@@ -18,28 +18,37 @@ export class MapglBoxComponent implements OnInit {
   cities$!: Observable<City[]>
   constructor(private store: Store<CitiesState>, private citiesService: CitiesService) { }
   ngOnInit(): void {
-    this.createMap();
+
     this.cities$ = this.citiesService.cities$;
-    console.log(this.cities$);
+    this.createMap();
+    this.createMarkers();
   }
   createMap() {
-    const map = new mapboxgl.Map({
+    this.map = new mapboxgl.Map({
       accessToken: "pk.eyJ1IjoicmJhcmlzb3prYWwiLCJhIjoiY2xuZzQwOXhuMHVmcTJqcXBmdm5uMjdvYSJ9.U0e6ODQXFdfmk_m1U5echA",
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v9',
       center: [10.451526, 51.165691],
-      zoom: 16
+
+      zoom: 5.5
     })
     new mapboxgl.Marker()
       .setLngLat([-0.1404545, 51.5220163])
-      .addTo(map);
-    map.on('load', () => {
-      map.setFog({})
+      .addTo(this.map);
+    this.map.on('load', () => {
+      this.createMarkers();
     })
   }
   createMarkers() {
-    cities.forEach(city => {
-
+    this.cities$.subscribe((city) => {
+      city.forEach((city) => {
+        const marker = new mapboxgl.Marker().setLngLat([city.lon, city.lat]).setPopup(
+          new mapboxgl.Popup({ offset: 25 }) // add popups
+            .setHTML(
+              `<h3>${city.cityName} $</h3><p>${city.price}</p>`
+            )
+        ).addTo(this.map);
+      })
     })
   }
 }
